@@ -11,6 +11,10 @@ class WorldTime {
 
   WorldTime({required this.location, required this.flag, required this.url});
 
+  init() {
+    getData();
+  }
+
   Future<void> getData() async {
     //http://worldtimeapi.org/api/timezone/Europe
 
